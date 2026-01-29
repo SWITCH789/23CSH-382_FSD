@@ -21,17 +21,13 @@ All components are organized into separate folders and rendered together in one 
 ## Screenshots
 
 ### Experiment 2.1
-![Navbar UI](screenshots\21.png)
-
+![alt text](../screenshots/21.png)
 ### Experiment 2.2
-![Navbar UI](screenshots\22.png)
-
+![alt text](../screenshots/22.png)
 ### Experiment 2.3
-![Bootstrap Form](screenshots\23.png)
-
+![alt text](../screenshots/23.png)
 ### Experiment 2.4
-![Material UI Form](screenshots\24.png)
-
+![alt text](../screenshots/24.png)
 ## How to Run
 ```bash
 npm install
