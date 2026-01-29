@@ -1,0 +1,80 @@
+body {
+  background-color: #f5faf9;
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+.app-bar {
+  background-color: #0d47a1;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* BUTTONS */
+.role-btn {
+  background-color: #1565c0 !important;
+}
+
+.submit-btn {
+  background-color: #0d47a1 !important;
+}
+
+.resolve-btn {
+  background-color: #2e7d32 !important;
+}
+
+.progress-btn {
+  border-color: #1565c0 !important;
+  color: #1565c0 !important;
+}
+
+/* SECTIONS */
+.section-title {
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #263238;
+}
+
+/* CARDS */
+.form-card,
+.issue-card {
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: box-shadow 0.2s ease;
+}
+
+.issue-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.issue-title {
+  color: #0d47a1;
+}
+
+.issue-location {
+  color: #546e7a;
+  margin-bottom: 8px;
+}
+
+/* STATUS */
+.status-chip {
+  margin-bottom: 12px;
+}
+
+.resolved-text {
+  margin-top: 8px;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+/* SPACING */
+.mt-4 {
+  margin-top: 32px;
+}
+
+.mb-4 {
+  margin-bottom: 32px;
+}
