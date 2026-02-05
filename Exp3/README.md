@@ -1,4 +1,4 @@
-# Experiment 2: Implementing Routing in Single Page Applications (SPA).
+# Experiment 3: Implementing Routing in Single Page Applications (SPA).
 
 ## Aim
 To implement basic client-side routing in a Single Page Application using React Router.
