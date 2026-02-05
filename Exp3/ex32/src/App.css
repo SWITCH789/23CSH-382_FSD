@@ -55,7 +55,7 @@ body {
 .card {
   background-color: rgb(255, 247, 130);
   width: 900px;
-  height: 260px; /* 🔑 fixed height = no scroll */
+  height: 260px;
   padding: 1.5rem 2rem;
   border-radius: 10px;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
@@ -68,7 +68,7 @@ body {
 }
 
 .profile-image img {
-  width: 140px;
+  width: 160px;
   height: 180px;
   object-fit: cover;
   border-radius: 8px;
