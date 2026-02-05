@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffcc41;
+  color: #333;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #222;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-inner {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.nav-button:hover {
+  text-decoration: underline;
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgb(255, 247, 130);
+  width: 900px;
+  height: 260px; /* 🔑 fixed height = no scroll */
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card.landscape {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile-image img {
+  width: 140px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.profile-details h1 {
+  margin-bottom: 8px;
+  color: #0c4a6e;
+}
+
+.projects {
+  flex: 1;
+}
+
+.projects h2 {
+  margin-bottom: 8px;
+  color: #1e293b;
+}
+
+.projects ul {
+  padding-left: 18px;
+}
+
+.projects li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.dashboard-card {
+  height: auto;
+}
+
+.dashboard-card h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #0c4a6e;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.skill-box {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

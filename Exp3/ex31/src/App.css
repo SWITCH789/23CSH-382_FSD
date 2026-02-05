@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.hpage {
+  background: rgb(255, 0, 0);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.apage {
+  background: rgb(0, 255, 0);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.cpage {
+  background: rgb(0, 0, 255);
+  padding: 20px;
+  border-radius: 5px;
+}
