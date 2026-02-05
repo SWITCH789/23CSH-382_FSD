@@ -50,7 +50,7 @@ function App() {
 
         <nav className="navbar">
           <div className="navbar-inner">
-            <Link to="/" className="nav-button">Home</Link>
+            <Link to="/" className="nav-button">My Portfolio</Link>
 
             <div className="nav-links">
               <Link to="/" className="nav-button">Profile</Link>
