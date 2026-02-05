@@ -27,6 +27,6 @@ This project demonstrates a Single Page Application that involves:
 
 ### Experiment 3.2, 3.3
 
-![alt text](../screenshots/32p.png)
-
 ![alt text](../screenshots/32d.png)
+
+![alt text](../screenshots/32p.png)
