@@ -22,6 +22,6 @@ This project demonstrates a Single Page Application that involves:
 
 ![alt text](../screenshots/Exp51.gif)
 
-### Experiment 5.1
+### Experiment 5.2
 
 ![alt text](../screenshots/Exp52.gif)
