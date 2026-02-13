@@ -21,3 +21,7 @@ This project demonstrates a Single Page Application that involves:
 ### Experiment 5.1
 
 ![alt text](../screenshots/Exp51.gif)
+
+### Experiment 5.1
+
+![alt text](../screenshots/Exp52.gif)
