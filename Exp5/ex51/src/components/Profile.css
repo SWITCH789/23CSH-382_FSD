@@ -1,0 +1,39 @@
+.profile-card.landscape {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile-image img {
+  width: 160px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.profile-details h1 {
+  margin-bottom: 8px;
+  color: #0c4a6e;
+}
+
+.projects {
+  flex: 1;
+}
+
+.projects h2 {
+  margin-bottom: 8px;
+  color: #1e293b;
+}
+
+.projects ul {
+  padding-left: 18px;
+}
+
+.projects li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
