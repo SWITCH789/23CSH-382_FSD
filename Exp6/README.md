@@ -31,7 +31,7 @@ This project demonstrates a form that involves:
     - The password should begin with a capital letter.
     - The password should have at least one number.
     - The password should have at least one special character.
-    . The password should have at least 5 characters.
+    - The password should have at least 5 characters.
 
 ## Screenshots
 
