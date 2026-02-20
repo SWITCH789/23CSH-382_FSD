@@ -9,14 +9,12 @@ function App() {
   const validate = () => {
     let tempErrors = {};
 
-    // Email Validation
     const emailPattern = /^[^\s@]+@[^\s@]+\.(com|in|[a-z]{2,})$/i;
     if (!emailPattern.test(email)) {
       tempErrors.email =
         "Email must contain @ and end with .com, .in or valid country code";
     }
 
-    // Password Validation
     const passwordPattern =
       /^[A-Z](?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{4,}$/;
 
