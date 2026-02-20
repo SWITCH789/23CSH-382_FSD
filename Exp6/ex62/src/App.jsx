@@ -12,7 +12,7 @@ function App() {
     const emailPattern = /^[^\s@]+@[^\s@]+\.(com|in|[a-z]{2,})$/i;
     if (!emailPattern.test(email)) {
       tempErrors.email =
-        "Email must contain @ and end with .com, .in or valid country code";
+        "Email must contain @ and end with .com, .in or valid domain.";
     }
 
     const passwordPattern =
@@ -20,7 +20,7 @@ function App() {
 
     if (!passwordPattern.test(password)) {
       tempErrors.password =
-        "Password must start with capital letter, contain one number, one special character, and minimum 5 characters";
+        "Password must start with capital letter, contain one number, one special character, and minimum 5 characters.";
     }
 
     setErrors(tempErrors);
