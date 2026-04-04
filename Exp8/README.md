@@ -1,46 +1,97 @@
-# Experiment 8
+# Experiment 8 - Spring Boot Student CRUD REST API
 
 ## Aim
-- To create and handle forms in a frontend application using controlled components in React.
-- To validate form inputs on the client side before submission.
+- To build a Spring Boot REST API for Student management with Create, Read, Update, and Delete operations.
+- To implement layered architecture with Controller, Service, and Repository layers.
+- To integrate JPA/Hibernate ORM with MySQL database for persistent student data storage.
+- To demonstrate RESTful API design principles with proper HTTP methods and status codes.
+- To practice handling JSON request/response payloads in Spring Boot applications.
 
 ## Tools & Libraries
-- React (Vite).
-- React Router.
-- UseState
+- **Spring Boot** 3.2.0+ (Web, Data JPA, DevTools)
+- **Spring Data JPA** with Hibernate ORM
+- **MySQL** Database (Connector/J)
+- **Maven** (Build tool with Wrapper)
+- **Java** 17+ (Compatible with Spring Boot 3.x)
+- **Postman** (API Testing Tool)
+
+## Project Structure
+
+```
+src/main/java/com/example/demo/
+├── StudentDemoApplication.java
+├── controller/
+│   └── StudentController.java
+├── service/
+│   └── StudentService.java
+├── repository/
+│   └── StudentRepository.java
+└── model/
+    └── Student.java
+
+src/main/resources/
+└── application.properties
+```
 
 ## Description
 
-### Experiment 6.1
+### Core Features
 
-This project demonstrates a form that involves:
+#### 1. **Student Model**
+- Entity class with JPA annotations
+- Auto-generated primary key using IDENTITY strategy
+- Fields: `id`, `name`, `email`
+- Getters and Setters for all properties
 
-- Multiple input fields.
-- An alert pop-up on form submission.
-- The alert pop-up displays all the details given by the user.
+#### 2. **Repository Layer**
+- `StudentRepository` extends `JpaRepository<Student, Integer>`
+- Provides built-in CRUD operations: `save()`, `findAll()`, `findById()`, `deleteById()`, `existsById()`
+- No custom queries needed for basic CRUD operations
 
-### Experiment 6.2
+#### 3. **Service Layer**
+- `StudentService` handles business logic
+- Methods:
+  - `getAllStudents()` - Retrieve all students from database
+  - `saveStudent(Student)` - Create or update a student record
+  - `getStudentById(int)` - Fetch a specific student by ID
+  - `updateStudent(int, Student)` - Modify existing student details
+  - `deleteStudent(int)` - Remove a student from database
 
-This project demonstrates a form that involves:
+#### 4. **Controller Layer**
+- `StudentController` with `@RequestMapping("/api/students")` base path
+- RESTful endpoints for all CRUD operations
+- Uses proper HTTP methods (GET, POST, PUT, DELETE)
+- Returns JSON responses with appropriate HTTP status codes
 
-- Two required input fields - email and password.
-- Conditions for validations of the email:
-    - The email address should have @.
-    - The form should except any valid email with any domain name.
-- Conditions for validation of the password:
-    - The password should begin with a capital letter.
-    - The password should have at least one number.
-    - The password should have at least one special character.
-    - The password should have at least 5 characters.
+#### 5. **Database Configuration**
+- MySQL database connection via JDBC
+- JPA/Hibernate configuration in `application.properties`
+- DDL mode: `update` (auto-creates tables on startup)
+- Credentials configured for local MySQL instance
+
+### API Endpoints
+
+| Method | Endpoint | Description | Request Body | Response |
+|--------|----------|-------------|--------------|----------|
+| GET | `/api/students` | Retrieve all students | None | List of students (JSON array) |
+| POST | `/api/students` | Create new student | `{"name": "...", "email": "..."}` | Created student with ID |
+| GET | `/api/students/{id}` | Get student by ID | None | Student object (JSON) |
+| PUT | `/api/students/{id}` | Update student by ID | `{"name": "...", "email": "..."}` | Updated student object |
+| DELETE | `/api/students/{id}` | Delete student by ID | None | Success/failure message |
+
 
 ## Screenshots
 
-### Experiment 6.1
+![alt text](../screenshots/ex8a.png)
 
-![alt text](../screenshots/ex61a.png)
-![alt text](../screenshots/ex61b.png)
+![alt text](../screenshots/ex8b.png)
 
-### Experiment 6.2
+![alt text](../screenshots/ex8c.png)
 
-![alt text](../screenshots/ex62a.png)
-![alt text](../screenshots/ex62b.png)
+![alt text](../screenshots/ex8d.png)
+
+![alt text](../screenshots/ex8e.png)
+
+![alt text](../screenshots/ex8f.png)
+
+![alt text](../screenshots/ex8g.png)
